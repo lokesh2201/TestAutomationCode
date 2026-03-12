@@ -22,12 +22,12 @@ public class drivers {
         switch (Browser) {
             case "Chrome":
                 CHROME = new ChromeOptions();
-                driver = new RemoteWebDriver(new URL("http://192.168.1.5:4444"), CHROME);
+                driver = new RemoteWebDriver(new URL("http://192.168.1.9:4444"), CHROME);
                 break;
 
             case "Firefox":
                 Firefox = new FirefoxOptions();
-                driver = new RemoteWebDriver(new URL("http://192.168.1.5:4444"), Firefox);
+                driver = new RemoteWebDriver(new URL("http://192.168.1.9:4444"), Firefox);
                 break;
         }
 

@@ -24,11 +24,11 @@ public class Loginpage {
         LN.EMAILFIELD("lokesh3424@gmail.com").PasswordFIELD("Test@123").SignButton();
     }
 
-//    @Test
-//    public void InvalidLogin() throws InterruptedException {
-//        LoginPOM LN = new LoginPOM(drivers.getDriver());
-//        LN.EMAILFIELD("lokesh344@gmail.com").PasswordFIELD("Tet@123").SignButton();
-//    }
+    @Test
+    public void InvalidLogin() throws InterruptedException {
+        LoginPOM LN = new LoginPOM(drivers.getDriver());
+        LN.EMAILFIELD("lokesh344@gmail.com").PasswordFIELD("Tet@123").SignButton();
+    }
 
     @Test
     public void Addtocart() throws InterruptedException {
@@ -37,7 +37,7 @@ public class Loginpage {
         LN.EMAILFIELD("lokesh3424@gmail.com").PasswordFIELD("Test@123").SignButton();
 
         Homepage H = new Homepage(drivers.getDriver());
-        H.ProductType("Ceramic Candy Bowl - Yellow");
+        H.ProductType("Stainless Steel Thermos - Yellow");
 
     }
 
