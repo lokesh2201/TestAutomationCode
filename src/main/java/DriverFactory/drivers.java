@@ -2,7 +2,9 @@ package DriverFactory;
 
 import Webdrivermanager.Webdriverutil;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -22,12 +24,12 @@ public class drivers {
         switch (Browser) {
             case "Chrome":
                 CHROME = new ChromeOptions();
-                driver = new RemoteWebDriver(new URL("http://192.168.1.9:4444"), CHROME);
+                driver = new ChromeDriver(CHROME);
                 break;
 
             case "Firefox":
                 Firefox = new FirefoxOptions();
-                driver = new RemoteWebDriver(new URL("http://192.168.1.9:4444"), Firefox);
+                driver = new FirefoxDriver(Firefox);
                 break;
         }
 
